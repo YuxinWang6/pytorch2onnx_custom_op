@@ -1,0 +1,20 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/home/yuxin.wang/.local/lib/python3.7/site-packages/torch/include -I/home/yuxin.wang/.local/lib/python3.7/site-packages/torch/include/torch/csrc/api/include -I/home/yuxin.wang/.local/lib/python3.7/site-packages/torch/include/TH -I/home/yuxin.wang/.local/lib/python3.7/site-packages/torch/include/THC -I/usr/local/include/python3.7m -c
+post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=try_ncrelu_forward -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+build /home/yuxin.wang/my_test/t3/build/temp.linux-x86_64-3.7/try_custom_op.o: compile /home/yuxin.wang/my_test/t3/try_custom_op.cpp
+
+
+
+
+
