@@ -16,7 +16,7 @@ def export_custom_op():
 
     inputs = (X)
 
-    f = 'modeleddy.onnx'
+    f = 'model_custom_op.onnx'
     torch.onnx.export(CustomModel(), inputs, f, opset_version=11, input_names=["X"], output_names=["Y"],
         custom_opsets={"usercustom": 11})
 
