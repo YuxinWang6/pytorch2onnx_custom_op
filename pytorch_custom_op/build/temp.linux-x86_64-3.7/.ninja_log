@@ -1,2 +1,4 @@
 # ninja log v5
 0	16971	0	/home/yuxin.wang/my_test/t3/build/temp.linux-x86_64-3.7/try_custom_op.o	656fe17be1019f22
+0	17209	0	/home/yuxin.wang/my_test/task3/pytorch_custom_op/build/temp.linux-x86_64-3.7/implement_custom_op.o	183740e6b4163fc1
+2	16652	0	/home/yuxin.wang/my_test/task3/pytorch_custom_op/build/temp.linux-x86_64-3.7/implement_custom_op.o	6ed1b1d563a570ea

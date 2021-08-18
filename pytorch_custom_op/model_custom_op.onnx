@@ -1,7 +1,7 @@
-pytorch1.9:Š
-<
-XYtry_ncrelu_forward_0"try_ncrelu_forward:
-usercustomtorch-jit-exportZ
+pytorch1.9:
+1
+XYneg_tensor_0"
+neg_tensor:ai.onnx.contribtorch-jit-exportZ
 X
 
 
@@ -13,6 +13,5 @@ usercustomtorch-jit-exportZ
 
 
 
-BB
-
-usercustom
+BB
+ai.onnx.contrib
